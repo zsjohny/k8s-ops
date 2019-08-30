@@ -32,9 +32,6 @@ spec:
           subPath: grafana
           name: grafana-storage
           readOnly: false
-        - mountPath: /etc/grafana
-          name: config
-          readOnly: false          
         - mountPath: /etc/grafana/provisioning/datasources
           name: grafana-datasources
           readOnly: false
@@ -80,9 +77,6 @@ spec:
       - persistentVolumeClaim:
           claimName: grafana-storage
         name: grafana-storage
-      - name: config
-        configMap:
-          name: grafana-config
       - name: grafana-datasources
         configMap:
           name: grafana-datasources
