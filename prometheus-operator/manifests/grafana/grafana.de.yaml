@@ -72,8 +72,8 @@ spec:
           name: grafana-dashboard-k8s-cluster-usage
           readOnly: false
       securityContext:
-        runAsNonRoot: 
-        truerunAsUser: 65534
+        runAsNonRoot: true
+        runAsUser: 65534
         fsGroup: 472
       serviceAccountName: grafana
       volumes:
