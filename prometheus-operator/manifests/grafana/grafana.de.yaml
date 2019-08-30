@@ -32,6 +32,9 @@ spec:
           subPath: grafana
           name: grafana-storage
           readOnly: false
+        - mountPath: /etc/grafana
+          name: config
+          readOnly: false          
         - mountPath: /etc/grafana/provisioning/datasources
           name: grafana-datasources
           readOnly: false
