@@ -34,7 +34,7 @@ spec:
           readOnly: false
         - mountPath: /etc/grafana
           name: config
-          readOnly: false 
+          readOnly: false
         - mountPath: /etc/grafana/provisioning/datasources
           name: grafana-datasources
           readOnly: false
